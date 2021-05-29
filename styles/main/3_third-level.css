@@ -1,0 +1,6 @@
+/* Box size */
+
+.box {
+  width: calc(20% - 10px);
+  height: 90px;
+}

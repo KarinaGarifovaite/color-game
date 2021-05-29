@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find A Color Game</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Scripts -->
+    <script defer src="./scripts/scoreboard.js"></script>
+  </head>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/0_resets.css" />
+  <link rel="stylesheet" href="./styles/1_header.css" />
+  <link rel="stylesheet" href="./styles/2_footer.css" />
+  <link rel="stylesheet" href="./styles/main/0_index.css" />
+  <body>
+    <header>
+      <nav class="conatiner">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="./pages/first-level.html"
+              ><i class="far fa-star"></i> EASY</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="./pages/second-level.html"
+              ><i class="fas fa-star-half-alt"></i> MEDIUM</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="./pages/third-level.html"
+              ><i class="fas fa-star"></i> HARD</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#scoreboard"><i class="fas fa-trophy"></i> SCOREBOARD</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-wrapper">
+        <div>
+          <h1>Find a Color Game</h1>
+          <div class="sm-box-container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div class="box box9"></div>
+          </div>
+          <p>Match the main color with given ones</p>
+        </div>
+      </section>
+      <section class="level-wrapper">
+        <h3>Choose your level:</h3>
+        <ul class="levels">
+          <li>
+            <a href="./pages/first-level.html"
+              ><i class="far fa-star"></i> EASY</a
+            >
+          </li>
+          <li>
+            <a href="./pages/second-level.html"
+              ><i class="fas fa-star-half-alt"></i> MEDIUM</a
+            >
+          </li>
+          <li>
+            <a href="./pages/third-level.html"
+              ><i class="fas fa-star"></i> HARD</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="scoreboard">
+        <h3><i class="fas fa-trophy"></i> SCOREBOARD</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th><i class="fas fa-user-alt player"></i> Player</th>
+              <th><i class="fas fa-sort-amount-up level"></i> Level</th>
+              <th><i class="fas fa-medal score"></i> Score</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+      <!-- Main Code -->
+    </main>
+
+    <footer>
+      <!-- Footer Code -->
+      <p>&copy; All rights reserved | 2021</p>
+    </footer>
+  </body>
+</html>
